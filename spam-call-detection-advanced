@@ -1,0 +1,67 @@
+# Spam Call Detection System (Advanced)
+
+An AI-powered Spam Call Detection web application that analyses caller data, predicts spam probability, and provides a real-time caller trust score with advanced features like geo-spam heatmap, call recording analysis, and social media lookup.
+
+---
+
+## 🔹 Key Features
+
+- 📞 **Spam Call Detection** – Classifies calls as Spam / Not Spam using ML model.
+- ⭐ **Caller Trust Score** – Generates a dynamic trust score based on history & patterns.
+- 🌍 **Geo-Spam Heatmap** – Shows spam call density on an interactive map.
+- 🎙️ **Call Recording Analysis** – Analyses uploaded audio recordings using AI (placeholder module).
+- 🔎 **Social Media Lookup** – Basic lookup of caller details from open sources (concept/demo).
+- 🧑‍💻 **User Authentication** – Login/Signup for users.
+- 📊 **Analytics Dashboard** – Visual charts of spam reports & call statistics.
+- 🛡️ **Security Focused** – Built with cybersecurity best practices in mind.
+
+---
+
+## 🛠 Tech Stack
+
+- **Backend:** Python, Flask, REST APIs  
+- **ML/AI:** Scikit-learn / custom ML model for spam detection  
+- **Frontend:** React.js  
+- **Database:** MongoDB / MySQL  
+- **Others:** JWT Auth, Geo APIs, Git, Linux/WSL
+
+---
+
+## 📁 Project Structure
+
+```bash
+spam-call-detection-advanced/
+├── backend/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── models/
+│   │   ├── spam_model.pkl
+│   │   └── preprocessing.py
+│   ├── routes/
+│   │   ├── auth_routes.py
+│   │   ├── detection_routes.py
+│   │   ├── analytics_routes.py
+│   │   └── geo_routes.py
+│   ├── services/
+│   │   ├── call_analysis.py
+│   │   ├── trust_score.py
+│   │   └── social_lookup.py
+│   └── config/
+│       └── config.py
+│
+└── frontend/
+    ├── package.json
+    ├── src/
+    │   ├── App.jsx
+    │   ├── pages/
+    │   │   ├── Login.jsx
+    │   │   ├── Dashboard.jsx
+    │   │   └── CallDetails.jsx
+    │   ├── components/
+    │   │   ├── TrustScoreCard.jsx
+    │   │   ├── Heatmap.jsx
+    │   │   └── RecentCallsTable.jsx
+    │   └── services/
+    │       └── api.js
+    └── public/
+        └── index.html
